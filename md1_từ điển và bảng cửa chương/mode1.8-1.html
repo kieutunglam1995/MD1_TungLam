@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<button onclick="bai1()">bai1</button>
+<button onclick="bai2()">bai2</button>
+<button onclick="bai3()">bai3</button>
+<button onclick="bai4()">bai4</button>
+<button onclick="bai5()">daonguocphantu</button>
+<button onclick="bai6()">Bai6</button>
+<button onclick="bai7()">bai7</button>
+<button onclick="bai8()">bai8</button>
+<button onclick="bai9()">bai9</button>
+<button onclick="bai10()">bai10</button>
+<button onclick="bai11()">bai11</button>
+<button onclick="bai12()">bai12</button>
+<button onclick="bai13()">bai13</button>
+<button onclick="bai14()">bai14</button>
+<button onclick="bai15()">bai15</button>
+<button onclick="bai16()">bai16</button>
+<button onclick="bai17()">bai17</button>
+<script>
+    function bai1() {
+        let x = ["I", "LOVE", "YOU"]
+        let y = ["Toi", "Yeu", "Ban"]
+        let input = prompt("Nhap tu:",'');
+        alert(y[x.indexOf(input.toUpperCase())]);
+    }
+    
+    function bai2() {
+        let text = "";
+        let x="025468";
+        for (let i = 0; i < x.length; i++) {
+           if (parseInt(x[i]) % 2 == 0 && i!==0){
+               text = text + "-" + x[i];
+           } else {
+               text = text + x[i];
+           }
+        }
+        alert(text);
+    }
+
+    function bai3() {
+        let built_in_string = 'The Quick Brown Fox';
+        let text = '';
+        let result = '';
+        for (let i = 0; i < built_in_string.length; i++) {
+           text = built_in_string[i];
+           if (text == text.toUpperCase()){
+               text = text.toLowerCase()
+           } else if (text == text.toLowerCase()){
+               text = text.toUpperCase()
+           }
+           result += text;
+        }
+        alert(result);
+    }
+    function bai4() {
+        let hide= [-1,-3,-5,-6,-2,-8,-9,-10,-11,-12,-13,-15,1,2,3];
+        let number = 0;
+        for (let i = 0; i < hide.length; i++) {
+            if (hide[i]<0){
+                number = number +1
+            }
+
+        }alert(number)
+
+    }
+     function bai5() {
+         let x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+         let  max =1;
+         for (let i = 0; i < x.length; i++) {
+        if (x[i]>max){
+            max = x[i];
+             }
+         }alert('ket qua cua max la;'+max + "vi tri la :" + x.indexOf(max))
+     }
+
+     function bai6() {
+         let x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let tong = 0 ;
+         for (let i = 0; i < x.length; i++) {
+             tong   = tong + x[i];
+         }
+             alert(tong/x.length)
+         }
+function bai7() {
+        let hide = [5,4,3,2,1];
+        alert(hide.reverse().join())
+
+}
+function bai8() {
+    let x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let y = +prompt('nhap so');
+    for (let i = 0; i < x.length; i++) {
+        if (x.includes(y)){
+            alert('ooo');
+        }else {alert('iii');
+
+        }
+    }
+
+}
+function bai9() {
+        let x =[1,2,3,4,5,6,7,8,9,10];
+        alert(x);
+        let y = +prompt('nhap');
+    for (let i = 0; i < x.length; i++) {
+    if (x.includes(y)){
+        x.splice(x.indexOf(y),1);
+    }
+    }x.push(0)
+alert(x)
+}
+function bai10() {
+        let x =[9,8,7,6,5,4,3,2,1,0];
+        x.sort();
+alert(x);
+}
+function bai11() {
+        let x =[1,2,3,4,5,6,7,8,9,10];
+        let y =[11,12,13,14,15,16,17,18,19,20];
+        let c = x.concat(y)
+alert(c)
+}
+    function bai12() {
+      let x =  [ 'c', 's', 'c', '2', '6', '1' ];
+    x.reverse().join()
+        alert(x)
+    }
+    function bai13() {
+        let x = [1,2,3,4,5];
+        let y = 0;
+        for (let i = 0; i < x.length; i++) {
+        y = x.length ;
+        }alert(y)
+    }
+function bai14() {
+        let x ='khoang thang le am';
+        let y = x.split(" ")
+alert(y.length)
+}
+   function bai15() {
+       let x =[1,2,3,4,5,6,7,8,9,10];
+       let y =[11,12,13,14,15,16,17,18,19,20];
+       for (let i = 0; i < x.length; i++) {
+           for (let j = 0; j < y.length; j++) {
+               if (x[i]==y[j]){
+                   alert(' giong')
+               }else { alert('k giong')}
+
+           }
+       }
+   }
+   
+   function bai16() {
+     let x = '-1 -2 -3';
+     let y = x.replaceAll('-','_');
+     alert(y)
+   }
+   function bai17() {
+       let a = [
+           [1, 2, 1, 24],
+           [8, 11, 9, 4],
+           [7, 0, 7, 27],
+           [7, 4, 28, 14],
+           [3, 10, 26, 7]
+       ];
+       for (let i = 0; i < a.length; i++) {
+           document.write('row'+ i + "<br>");
+           for (let j = 0; j < a[i].length; j++) {
+            document.write(a[i][j] + "<br>");
+           }
+       }
+
+
+
+   }
+
+
+
+</script>
+</body>
+</html>

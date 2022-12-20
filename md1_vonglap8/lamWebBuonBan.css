@@ -1,0 +1,50 @@
+#IdDiv1 {
+    background-color: #B9B6B5;
+    width: 50%;
+    padding: 30px;
+    border-radius: 3px;
+}
+
+#inputProduct {
+    background-color: #f6f3f2;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+#ButtonProduct {
+    background-color: #5daf10;
+    border-radius: 3px;
+    color: #e3dddb;
+    border: 1px solid black;
+}
+
+/*#IdDiv2 {*/
+/*    margin: 40px;*/
+/*    width: 70%;*/
+}
+#Span1 {
+    float: left;
+}
+
+#Span2 {
+    float: right;
+    color: brown;
+}
+
+#IdDiv3 {
+
+}
+
+Table {
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #B9B6B5;
+}
+td{
+    border: 1px solid black;
+}
+tr:nth-child(even){
+    background-color:white;
+}
